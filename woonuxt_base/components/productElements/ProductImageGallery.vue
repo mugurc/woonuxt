@@ -41,7 +41,7 @@ watch(
   <div>
     <SaleBadge :node="node" class="absolute text-base top-4 right-4" />
     <NuxtImg
-      class="rounded-xl object-contain w-full min-w-[350px]"
+      class="object-contain w-full min-w-[350px]"
       width="640"
       height="640"
       :alt="imageToShow.altText || node.name"

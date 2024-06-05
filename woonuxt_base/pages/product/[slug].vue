@@ -70,6 +70,7 @@ const disabledAddToCart = computed(() => {
 });
 </script>
 
+
 <template>
   <main class="container relative py-6 xl:max-w-7xl" v-if="product">
     <SEOHead :info="product" />
@@ -126,7 +127,7 @@ const disabledAddToCart = computed(() => {
               type="number"
               min="1"
               aria-label="Quantity"
-              class="bg-white border rounded-lg flex text-left p-2.5 w-20 gap-4 items-center justify-center focus:outline-none" />
+              class="bg-white border flex text-left p-2.5 w-20 gap-4 items-center justify-center focus:outline-none" />
             <AddToCartButton class="flex-1 w-full md:max-w-xs" :disabled="disabledAddToCart" :class="{ loading: isUpdatingCart }" />
           </div>
         </form>

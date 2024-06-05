@@ -62,7 +62,7 @@ const imagetoDisplay = computed<string>(() => {
 
 <style lang="postcss">
 .product-card img {
-  @apply rounded-lg object-top object-cover w-full;
+  @apply object-top object-cover w-full;
   aspect-ratio: 1/1.125;
 }
 

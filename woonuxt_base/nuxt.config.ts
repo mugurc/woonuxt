@@ -4,7 +4,7 @@ const { resolve } = createResolver(import.meta.url);
 export default defineNuxtConfig({
   app: {
     head: {
-      titleTemplate: `%s | ${process.env.SITE_TITLE ?? 'WooNuxt'}`,
+      titleTemplate: `%s | ${process.env.SITE_TITLE ?? 'Bilsartworks'}`,
       htmlAttrs: { lang: 'en' },
       link: [{ rel: 'icon', href: '/logo.svg', type: 'image/svg+xml' }],
     },
@@ -62,6 +62,7 @@ export default defineNuxtConfig({
       { code: 'fr_FR', file: 'fr-FR.json', name: 'Français 🇫🇷' },
       { code: 'it_IT', file: 'it-IT.json', name: 'Italiano 🇮🇹' },
       { code: 'pt_BR', file: 'pt-BR.json', name: 'Português 🇧🇷' },
+      { code: 'tr_TR', file: 'tr-TR.json', name: 'Türkçe 🇹🇷' },
     ],
     langDir: 'locales',
     defaultLocale: 'en_US',
